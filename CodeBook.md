@@ -1,12 +1,11 @@
+# Codebook for "Human Activity Recognition Using Smartphones" Tidy Dataset
 
-## Codebook for "Human Activity Recognition Using Smartphones" Tidy Dataset
-
-# Introduction
+## Introduction
 
 Original data was collected and processed by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto. [1]
 
 
-# Description of the original dataset
+## Description of the original dataset
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
 
@@ -53,9 +52,9 @@ Notes:
 * Features are normalized and bounded within [-1,1].
 * Each feature vector is a row on the text file.
 
-# Producing of tidy datase
+## Producing of tidy datase
 
 Two sets of data from Training set and Test set was merged together. Only the columns that contains mean() or sd() values was separated from the main dataset. The data about the subject and activity was obtained and added to dataset. Then mean of each variable for each person and activity was produced in order to get final tidy dataset of 180 cases (30 subject with 6 activities for each).
 
-# References
+## References
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
