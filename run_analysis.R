@@ -2,10 +2,10 @@ fileUrl <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20
 download.file(fileUrl, "data.zip", mode="wb")
 unzip("data.zip")
 list.files()
+wd <- getwd()
 setwd("./UCI HAR Dataset")
 list.files()
 list.dirs()
-wd <- getwd()
 
 collumn_labels_raw <- readLines("features.txt")
 collumn_labels_table <- read.table("features.txt", header=FALSE)
