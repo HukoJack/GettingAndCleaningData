@@ -5,6 +5,7 @@ list.files()
 setwd("./UCI HAR Dataset")
 list.files()
 list.dirs()
+wd <- getwd()
 
 collumn_labels_raw <- readLines("features.txt")
 collumn_labels_table <- read.table("features.txt", header=FALSE)
@@ -50,4 +51,6 @@ head(data_melt)
 result <- dcast(data_melt, subject + activity ~ variable, mean)
 head(result)
 
-
+rm(data, data_melt)
+setwd(wd)
+write.csv(result, "TidyDataset.csv", quote=FALSE, row.names=FALSE)
