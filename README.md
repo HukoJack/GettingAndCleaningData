@@ -54,7 +54,7 @@ Notes:
 * Features are normalized and bounded within [-1,1].
 * Each feature vector is a row on the text file.
 
-## Producing the tidy datase
+## Producing the tidy dataset
 
 Two sets of data from Training set and Test set was merged together. Only the columns that contains mean() or sd() values was separated from the main dataset. The data about the subject and activity was obtained and added to dataset. Then mean of each variable for each person and activity was produced in order to get final tidy dataset of 180 cases (30 subject with 6 activities for each).
 
